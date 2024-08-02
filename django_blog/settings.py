@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-)0*g%ezmle_h*(5+!-oqi&b3=1adi!nmkmiidys_x5q5vd!$99
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 
 # Application definition
@@ -137,3 +138,5 @@ LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = "blog-login"
 
 
+STATICFILES_DIRS = os.path.join(BASE_DIR, "static"),
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles_build", "static")
