@@ -138,8 +138,8 @@ LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = "blog-login"
 
 
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR,'static')
 
 STATICFILES_DIR = {
-    os.path.join(BASE_DIR , "hotels/static")
+    os.path.join(BASE_DIR , "blog/static")
 }
